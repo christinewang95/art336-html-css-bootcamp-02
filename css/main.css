@@ -404,31 +404,31 @@ Globals
 	Sass variable, mixins, plugins, etc. that are used throughout the entore site.
 */
 @font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 300;
-  src: local("Dosis Light"), local("Dosis-Light"), url(http://fonts.gstatic.com/s/dosis/v4/7aJzV14HzAOiwNTiPgucGRkAz4rYn47Zy2rvigWQf6w.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-@font-face {
-  font-family: 'Dosis';
+  font-family: 'Crimson Text';
   font-style: normal;
   font-weight: 400;
-  src: local("Dosis Regular"), local("Dosis-Regular"), url(http://fonts.gstatic.com/s/dosis/v4/oaBFj7Fz9Y9_eW3k9Jd9X4DGDUGfDkXyfkzVDelzfFk.woff2) format("woff2");
+  src: local("Crimson Text"), local("CrimsonText-Roman"), url(http://fonts.gstatic.com/s/crimsontext/v6/3IFMwfRa07i-auYR-B-zNRVuXpl7XtNjpLlhhhGlVqc.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 @font-face {
-  font-family: 'Droid Serif';
+  font-family: 'Playfair Display';
   font-style: normal;
-  font-weight: 400;
-  src: local("Droid Serif"), local("DroidSerif"), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaJQV2lvL5Ba9FjAYK6Lx0Qk.woff2) format("woff2");
+  font-weight: 700;
+  src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"), url(http://fonts.gstatic.com/s/playfairdisplay/v9/UC3ZEjagJi85gF9qFaBgIN4KoCs5_BuQksQmhwRAS2Y.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 @font-face {
-  font-family: 'Droid Serif';
+  font-family: 'Crimson Text';
   font-style: italic;
   font-weight: 400;
-  src: local("Droid Serif Italic"), local("DroidSerif-Italic"), url(http://fonts.gstatic.com/s/droidserif/v6/cj2hUnSRBhwmSPr9kS5893g2OlVIdL8hHNlffo755yo.woff2) format("woff2");
+  src: local("Crimson Text Italic"), local("CrimsonText-Italic"), url(http://fonts.gstatic.com/s/crimsontext/v6/a5QZnvmn5amyNI-t2BMkWI34wjPzHKS4eJTX0vCeQpI.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Playfair Display"), local("PlayfairDisplay-Regular"), url(http://fonts.gstatic.com/s/playfairdisplay/v9/2NBgzUtEeyB-Xtpr9bm1CRD8Ne_KjP89kA3_zOrHj8E.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 /* 
@@ -436,10 +436,11 @@ Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
 body {
-  background-color: #c1faff;
-  font-family: 'Dosis', georgia, serif;
+  background-color: #000;
+  color: white;
+  font-family: 'Crimson Text', georgia, serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.4;
@@ -449,20 +450,20 @@ body {
 }
 
 h1 {
-  font-family: 'Droid Serif', helvetica, verdana, sans-serif;
-  font-style: italic;
+  font-family: 'Playfair Display', helvetica, verdana, sans-serif;
+  font-style: normal;
   font-weight: 400;
   font-size: 78px;
   font-size: 4.875rem;
   line-height: 1;
   text-align: center;
   border-style: solid;
-  border-color: #287EC7;
-  border-bottom: 6px;
+  border-color: #fff;
+  border-bottom: 4px;
+  padding: 4px 5px 6px 5px;
 }
 
 h2 {
-  border-top: dashed;
   border-color: #fff;
   font-size: 40px;
   font-size: 2.5rem;
@@ -472,7 +473,7 @@ h6 {
   font-size: 32px;
   font-size: 2rem;
   border-style: dashed;
-  border-color: #fff;
+  border-color: #9f9f9f;
   padding: 4px 5px 6px 5px;
   text-align: center;
 }
@@ -480,9 +481,9 @@ h6 {
 ol {
   font-size: 33px;
   font-size: 2.0625rem;
-  font-family: 'Dosis', georgia, serif;
+  font-family: 'Crimson Text', georgia, serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -494,8 +495,8 @@ img {
 }
 
 nav {
-  background-color: #e0f8ff;
-  border: 1px solid #d3fbff;
+  background-color: #000;
+  border: 3px solid #d3fbff;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top: 6px;
@@ -527,8 +528,8 @@ article h1 {
 }
 
 article p:first-of-type {
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 article p:second-of-type {
@@ -549,20 +550,21 @@ article div {
   color: #1a0707;
   font-size: 20px;
   font-size: 1.25rem;
-  font-family: 'Droid Serif', georgia, serif;
+  font-family: 'Playfair Display', georgia, serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   margin: 20px 0;
   line-height: 1;
   text-align: center;
 }
 
 footer[role="complementary"] {
-  border-bottom: 1px #fff dashed;
-  border-top: 1px #fff dashed;
-  color: #1a0707;
+  border-bottom: 1px #fff solid;
+  border-top: 1px #fff solid;
+  color: #b5b5b5;
   margin: 40px 0;
   padding: 20px 0;
+  font-size: 20;
 }
 
 footer[role="complementary"] p {
